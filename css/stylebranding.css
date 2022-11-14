@@ -1,0 +1,541 @@
+@font-face {
+    font-family: 'swiss-721-medium-bt';
+    src: url("../fonts/swiss-721-medium-bt.ttf");
+  }
+  @font-face {
+    font-family: 'Pluto Sans Medium';
+    src: url("../fonts/Pluto Sans Medium.otf");
+  }
+  
+  @font-face {
+    font-family: 'Pluto Sans Light';
+    src: url("../fonts/Pluto Sans Light.otf");
+  }
+body{
+    background-color:#f2f1f1;
+}
+.imagen img{
+    width: 37rem;
+}
+.section3{
+    height: 100vh !important;
+}
+.section4{
+    height: 140rem !important;    
+}
+.imagenes img{
+    width: 35rem;
+}
+.imagenes-quimicos img{
+width: 35rem;
+}
+.imagenes-grandess img{
+  width: 23rem;
+}
+.imagenes-zaki img{
+  width: 23rem;
+}
+.imagenes-tony img{
+  width: 13rem;
+}
+.imagenes img{
+    margin-top: 2rem;
+}
+.imageness img{
+    width: 28rem;
+    opacity: 0;
+}
+#contenedor_loader {
+  background-color: #ffff;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  -webkit-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+  z-index: 10000;
+}
+.loader video{
+  width: 40rem;
+}
+#loader {
+  height: 300px;
+  width: 300px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  order: 5px solid rgb(26 108 97 / 56%);
+  border-radius: 50%;
+  border-top-color: #fff;
+  animation: spin 1s ease-in-out infinite;
+  -webkit-animation: spin 1s ease-in-out infinite; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav{
+    justify-content: space-evenly;
+    align-items: center;
+    background: #ffb700;
+    z-index: 9;
+}
+.nav a{
+    text-decoration: none;
+    color: #3b3b3b;
+    font-family: 'swiss-721-medium-bt';
+    font-weight: 700;
+}
+
+.navbar-brand img{
+    width: 5rem;
+}
+.navbar-expand-lg .navbar-nav{
+    margin: auto;
+}
+.nav-item:last-child{
+    margin-right: 6rem;
+}
+.nav-item a{
+    color:#3d3d3d;
+    font-family: 'swiss-721-medium-bt';
+    font-weight: 500;
+    font-size: 1rem;
+}
+.nav-item a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #63e8e6;
+    -webkit-transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+  }
+  .nav-item a:hover::after {
+    width: 100%;
+  } 
+  .nav-item a:hover {
+    color: #ffff;
+  }
+.navbar-expand-lg{
+    background-color: #ffb700;
+    z-index: 9;
+}
+.active a{
+    color: #ffff;
+    font-family: 'swiss-721-medium-bt';
+    border-bottom: 2px solid #63e8e6;
+}
+.active a:hover{
+    color: inherit;
+}
+.custom-p{
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+}
+.scroll-class{
+    opacity: 1;
+}
+.section2-{
+    height: 5rem;
+}
+.section2--{
+    height: 6rem;
+}
+.boton-volver img{
+    width: 3.5rem;
+    padding-top: 1rem;
+    cursor: pointer;
+}
+iframe{
+    margin-bottom: 2rem;
+}
+.tooltip- {
+    background-color: #FFB700;
+    color: #333333;
+    position: fixed;
+    bottom: 12rem;
+    right: 8rem;
+    padding: 0.8rem;
+    display: none;
+    z-index: 99999999;
+    font-family: 'Pluto Sans Light';
+    font-weight: 900;
+    font-size: 1.2rem;
+  }
+  .tooltip-2 {
+    background-color: #FFB700;
+    color: #333333;
+    position: fixed;
+    bottom: 7rem;
+    right: 8rem;
+    padding: 0.8rem;
+    display: none;
+    z-index: 99999999;
+    font-family: 'Pluto Sans Light';
+    font-weight: 900;
+    font-size: 1.2rem;
+  }
+  .boton-telegram-contenedor{
+    position: fixed;
+    bottom: 4rem;
+    right: 1rem;
+    width: 6.6rem;
+    height: 6.6rem;
+    z-index: 9999;
+    transition: 0.3s ease;
+  }
+  .boton-telegram-contenedor:hover .tooltip-{
+    display: block;
+  }
+  .boton-telegram-contenedor:hover .tooltip-2{
+    display: block;
+  }
+  .formulario-email{
+    display: flex;
+    flex-direction: column;
+  }
+  form.formulario-email {
+    margin-left: 0rem !important;
+  }
+  
+  .formulario-email input{
+    padding: 0.5rem;
+      border-radius: 50px 50px 50px 50px;
+      background-color: #BEBEBE;
+      border: #BEBEBE;
+      outline: none;
+      margin-top: 0.5rem;
+      margin-bottom: 1rem;
+  }
+  .modal-content{
+    background: #EDEDED !important;
+      padding: 20px 40px 20px 40px !important;
+      box-shadow: 2px 8px 23px 3px rgb(0 0 0 / 20%) !important;
+      border-radius: 20px 20px 20px 20px !important;
+  }
+  .modal-title{
+    font-size: 1rem;
+    font-family: 'Pluto Sans Medium';
+    line-height: 1.2rem !important;
+  }
+  #boton-x{
+    margin-top: 0rem !important;
+  }
+  #musica{
+    bottom: 1rem !important;
+  }
+  .formulario-email label{
+    font-family: "Pluto Sans Medium", Sans-serif;
+      font-size: 1rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      line-height: 18px;
+  }
+  .boton-telegram{
+    width: 4rem;
+    height: 4rem;
+    background-color: #FFB700;
+    border-radius: 50%;
+    cursor: pointer;
+    top: 50%;
+    transition: .2s;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } 
+
+  .boton-telegram:hover{
+    background-color: #FFC739;
+    box-shadow: 0px 12px 30px #FFC739;
+  }
+  .boton-telegram i{
+    font-size: 1.7rem;
+    color: #333333;
+    transition: .2s;
+  } 
+  #mensajes{
+    bottom: 11rem !important;
+  }
+  
+  .video-telefono img{
+    width: 15rem;
+    position: relative;
+  }
+  .tooltip- {
+    background-color: #FFB700;
+    color: #333333;
+    position: fixed;
+    bottom: 12rem;
+    right: 8rem;
+    padding: 0.8rem;
+    display: none;
+    z-index: 99999999;
+    font-family: 'Pluto Sans Light';
+    font-weight: 900;
+    font-size: 1.2rem;
+  }
+  button {
+    margin-top: 2rem;
+    width: 7rem;
+    border: none;
+    padding: 0.2rem;
+    border-radius: 2rem;
+    font-family: 'swiss-721-medium-bt';
+    background-color: #ffb600;
+    color: #3f3e3e;
+  }
+  .tooltip-2 {
+    background-color: #FFB700;
+    color: #333333;
+    position: fixed;
+    bottom: 7rem;
+    right: 8rem;
+    padding: 0.8rem;
+    display: none;
+    z-index: 99999999;
+    font-family: 'Pluto Sans Light';
+    font-weight: 900;
+    font-size: 1.2rem;
+  }
+  .boton-telegram:hover{
+    background-color: #FFC739;
+    box-shadow: 0px 12px 30px #FFC739;
+  }
+  .boton-telegram-contenedor:hover .tooltip-{
+    display: block;
+  }
+  .boton-telegram-contenedor:hover .tooltip-2{
+    display: block;
+  }
+  .boton-telegram i{
+    font-size: 1.7rem;
+    color: #333333;
+    transition: .2s;
+  } 
+  .boton-telegram{
+    width: 4rem;
+    height: 4rem;
+    background-color: #FFB700;
+    border-radius: 50%;
+    cursor: pointer;
+    top: 50%;
+    transition: .2s;
+    /* box-shadow: 0px 10px 30px #3BB081; */
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } 
+  .boton-telegram-contenedor{
+    position: fixed;
+    bottom: 4rem;
+    right: 1rem;
+    width: 6.6rem;
+    height: 6.6rem;
+    z-index: 9999;
+    transition: 0.3s  ease;
+  }
+  /* Modal */
+  .formulario-email{
+    display: flex;
+    flex-direction: column;
+  }
+  form.formulario-email {
+    margin-left: 0rem !important;
+  }
+  #mensajes{
+    bottom: 11rem !important;
+  }
+  
+  .formulario-email input{
+    padding: 0.5rem;
+      border-radius: 50px 50px 50px 50px;
+      background-color: #BEBEBE;
+      border: #BEBEBE;
+      outline: none;
+      margin-top: 0.5rem;
+      margin-bottom: 1rem;
+  }
+  .modal-content{
+    background: #EDEDED !important;
+      padding: 20px 40px 20px 40px !important;
+      box-shadow: 2px 8px 23px 3px rgb(0 0 0 / 20%) !important;
+      border-radius: 20px 20px 20px 20px !important;
+  }
+  .modal-title{
+    font-size: 1rem;
+    font-family: 'Pluto Sans Medium';
+    line-height: 1.2rem !important;
+  }
+  #boton-x{
+    margin-top: 0rem !important;
+  }
+  .visuales-video{
+    margin-top: 6rem;
+  }
+  .formulario-email label {
+    font-family: "Pluto Sans Medium", Sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 18px;
+  }
+  #boton-musica-play{
+    bottom: 1rem;
+  }
+  #boton-musica-pause{
+    bottom: 1rem;
+  }
+  #boton-musica-pause{
+    width: 6rem;
+    height: 6rem;
+    left:1rem;
+  }
+  #boton-musica-play{
+  left: 1rem;
+  bottom: 0.5rem;
+  }
+  i.fa-solid.fa-music{
+    font-size: 0.7rem;
+  }
+  .boton-music{
+    width:3rem;
+    height: 3rem;
+    background: gray;
+  }
+  .boton-music i{
+    color: #fff;
+  }
+  #boton-musica-play{
+    bottom: 1rem;
+  }
+  #boton-musica-pause{
+    bottom: 1rem;
+  }
+  #boton-musica-pause{
+    width: 6rem;
+    height: 6rem;
+    left:1rem;
+  }
+  #boton-musica-play{
+  left: 1rem;
+  bottom: 0.5rem;
+  }
+  i.fa-solid.fa-music{
+    font-size: 0.7rem;
+  }
+  .boton-music{
+    width:3rem;
+    height: 3rem;
+    background: gray;
+  }
+  .boton-music i{
+    color: #fff;
+  }
+  .hamburguer{
+    position: relative;
+    display: block;
+    width: 35px;
+    cursor: pointer;
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+    /* transform: translateX(320px); */
+    z-index: 99;
+  }
+  .hamburguer .bar, .hamburguer:after,.hamburguer:before{
+  content: '';
+  display: block;
+  width: 100%;
+  height: 5px;
+  background-color: white;
+  margin: 6px 8px;
+  transition: 0.4s;
+  }
+  .hamburguer.is-active:before{
+  transform: rotate(-45deg) translate(-8px, 6px);
+  
+  }
+  .hamburguer.is-active:after{
+    transform: rotate(45deg) translate(-9px, -8px);
+    
+    }
+  .hamburguer.is-active .bar{
+    opacity: 0;
+  }
+  .mobile-nav{
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    min-height: 100vh;
+    z-index: 8;
+    background-color: #ffb700;
+    padding-top: 120px;
+    transition: all 0.3s ease-in-out;
+  }
+  .mobile-nav.is-active{
+    left: 0;
+  }
+  .mobile-nav a{
+    display: block;
+    margin: 0 auto 16px;
+    width: 100%;
+    font-family: 'swiss-721-medium-bt';
+  
+    max-width: 200px;
+    text-align: center;
+    margin-bottom: 16px;
+    padding: 12px 16px;
+    background-color: #f2f1f1 ;
+    color: black;
+    text-decoration: none;
+    font-weight: 400;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  @media screen and (min-width:1000px){
+    .hamburguer{
+      display: none;
+    }
+  }
+
+
+
+@media screen and (max-width:700px){
+    .imagenes img{
+        width: 100%;
+    }
+    .imagenes img:first-child{
+        padding-top: 2rem;
+      }
+      .section2-{
+        display: none;
+      }
+      .imagenes img:last-child{
+        padding-bottom: 2rem;
+      }
+}
+@media screen and (min-width:1400px){
+    .imagenes img{
+        width: 33rem;
+    }
+    .imagenes-quimicos img{
+      width: 40rem;
+    }
+    .imagenes-tony img{
+      width: 17.5rem;
+    }
+    .imagenes-grandess img{
+      width: 23rem;
+    }
+    .loader video{
+      width:58rem;
+    }
+}

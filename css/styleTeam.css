@@ -1,0 +1,992 @@
+@font-face {
+    font-family: 'swiss-721-medium-bt';
+    src: url("../fonts/swiss-721-medium-bt.ttf");
+  }
+  @font-face {
+    font-family: 'Pluto Sans Regular';
+    src: url("../fonts/Pluto Sans Regular.otf");
+  }
+  @font-face {
+    font-family: 'Pluto Sans Light';
+    src: url("../fonts/Pluto Sans Light.otf");
+  }
+  @font-face {
+    font-family: 'Pluto Sans Medium';
+    src: url("../fonts/Pluto Sans Medium.otf");
+  }
+  #contenedor_loader {
+    background-color: #ffff;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+    z-index: 10000;
+  }
+  .loader video{
+    width: 40rem;
+  }
+  #loader {
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    order: 5px solid rgb(26 108 97 / 56%);
+    border-radius: 50%;
+    border-top-color: #fff;
+    animation: spin 1s ease-in-out infinite;
+    -webkit-animation: spin 1s ease-in-out infinite; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+body{
+    background-color:#f2f1f1;
+}
+p{
+    margin-bottom: -0.4rem;
+}
+.tooltip- {
+    background-color: #FFB700;
+    color: #333333;
+    position: fixed;
+    bottom: 12rem;
+    right: 8rem;
+    padding: 0.8rem;
+    display: none;
+    z-index: 99999999;
+    font-family: 'Pluto Sans Light';
+    font-weight: 900;
+    font-size: 1.2rem;
+  }
+  button {
+    margin-top: 2rem;
+    width: 7rem;
+    border: none;
+    padding: 0.2rem;
+    border-radius: 2rem;
+    font-family: 'swiss-721-medium-bt';
+    background-color: #ffb600;
+    color: #3f3e3e;
+  }
+  .tooltip-2 {
+    background-color: #FFB700;
+    color: #333333;
+    position: fixed;
+    bottom: 7rem;
+    right: 8rem;
+    padding: 0.8rem;
+    display: none;
+    z-index: 99999999;
+    font-family: 'Pluto Sans Light';
+    font-weight: 900;
+    font-size: 1.2rem;
+  }
+  .boton-telegram:hover{
+    background-color: #FFC739;
+    box-shadow: 0px 12px 30px #FFC739;
+  }
+  .boton-telegram-contenedor:hover .tooltip-{
+    display: block;
+  }
+  .boton-telegram-contenedor:hover .tooltip-2{
+    display: block;
+  }
+  .boton-telegram i{
+    font-size: 1.7rem;
+    color: #333333;
+    transition: .2s;
+  } 
+  .boton-telegram{
+    width: 4rem;
+    height: 4rem;
+    background-color: #FFB700;
+    border-radius: 50%;
+    cursor: pointer;
+    top: 50%;
+    transition: .2s;
+    /* box-shadow: 0px 10px 30px #3BB081; */
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } 
+  .boton-telegram-contenedor{
+    position: fixed;
+    bottom: 4rem;
+    right: 1rem;
+    width: 6.6rem;
+    height: 6.6rem;
+    z-index: 9999;
+    transition: 0.3s  ease;
+  }
+  /* Modal */
+  .formulario-email{
+    display: flex;
+    flex-direction: column;
+  }
+  form.formulario-email {
+    margin-left: 0rem !important;
+  }
+  #mensajes{
+    bottom: 11rem !important;
+  }
+  
+  .formulario-email input{
+    padding: 0.5rem;
+      border-radius: 50px 50px 50px 50px;
+      background-color: #BEBEBE;
+      border: #BEBEBE;
+      outline: none;
+      margin-top: 0.5rem;
+      margin-bottom: 1rem;
+  }
+  .modal-content{
+    background: #EDEDED !important;
+      padding: 20px 40px 20px 40px !important;
+      box-shadow: 2px 8px 23px 3px rgb(0 0 0 / 20%) !important;
+      border-radius: 20px 20px 20px 20px !important;
+  }
+  .modal-title{
+    font-size: 1rem;
+    font-family: 'Pluto Sans Medium';
+    line-height: 1.2rem !important;
+  }
+  #boton-x{
+    margin-top: 0rem !important;
+  }
+  
+  .formulario-email label {
+    font-family: "Pluto Sans Medium", Sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 18px;
+  }
+  
+.imagen img{
+    width: 37rem;
+}
+.section3{
+    height: 100vh !important;
+}
+.section4{
+    height: 140rem !important;    
+}
+.imagenes img{
+    width: 37rem;
+}
+
+.imagenes img{
+    margin-top: 2rem;
+}
+.imageness img{
+    width: 28rem;
+    opacity: 0;
+}
+.nav{
+    justify-content: space-evenly;
+    align-items: center;
+    background: #ffb700;
+    z-index: 9;
+}
+.nav a{
+    text-decoration: none;
+    color: #3b3b3b;
+    font-family: 'swiss-721-medium-bt';
+    font-weight: 700;
+}
+
+.navbar-brand img{
+    width: 5rem;
+}
+.navbar-expand-lg .navbar-nav{
+    margin: auto;
+}
+.nav-item:last-child{
+    margin-right: 6rem;
+}
+.nav-item a{
+    color:#3d3d3d;
+    font-family: 'swiss-721-medium-bt';
+    font-weight: 500;
+    font-size: 1rem;
+}
+.nav-item a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #63e8e6;
+    -webkit-transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+  }
+  .nav-item a:hover::after {
+    width: 100%;
+  } 
+  .nav-item a:hover {
+    color: #ffff;
+  }
+.navbar-expand-lg{
+    background-color: #ffb700;
+    z-index: 9;
+}
+.active a{
+    color: #ffff;
+    font-family: 'swiss-721-medium-bt';
+    border-bottom: 2px solid #63e8e6;
+}
+.active a:hover{
+    color: inherit;
+}
+.imagen-equipo {
+    width: 15rem;
+    margin-top: 2rem;
+}
+
+.titulo-team h1{
+    font-family: 'Pluto Sans Regular';
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    font-size: 4rem;
+    color: #3f3e3e;
+}
+.titulo-weight {
+font-weight: 700;
+color: #FFB700;
+}
+.titulo-equipo{
+    color: #4F73AB;
+    display: block;
+    font-size: 1rem;
+    font-family: 'Pluto Sans Regular';
+    margin-bottom: -0.6rem;
+}
+.equipo-weight{
+    font-weight: 700;
+}
+.profesion-equipo{
+    font-size: 0.8rem;
+    color: #4F73AB;
+    font-family: 'swiss-721-medium-bt';
+}
+.section2-{
+    height: 16rem;
+}
+.row-team{
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+}
+.row-coordinador{
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+}
+.row-diseño-coordinador {
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+}
+.c-scrollbar{
+    z-index: 199;
+  }
+.col-xl-3{
+    margin-top: 1.4rem;
+}
+#boton-musica-play{
+    bottom: 1rem;
+  }
+  #boton-musica-pause{
+    bottom: 1rem;
+  }
+  #boton-musica-pause{
+    width: 6rem;
+    height: 6rem;
+    left:1rem;
+  }
+  #boton-musica-play{
+  left: 1rem;
+  bottom: 0.5rem;
+  }
+  i.fa-solid.fa-music{
+    font-size: 0.7rem;
+  }
+  .boton-music{
+    width:3rem;
+    height: 3rem;
+    background: gray;
+  }
+  .boton-music i{
+    color: #fff;
+  }
+  .hamburguer{
+    position: relative;
+    display: block;
+    width: 35px;
+    cursor: pointer;
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+    /* transform: translateX(320px); */
+    z-index: 99;
+  }
+  .hamburguer .bar, .hamburguer:after,.hamburguer:before{
+  content: '';
+  display: block;
+  width: 100%;
+  height: 5px;
+  background-color: white;
+  margin: 6px 8px;
+  transition: 0.4s;
+  }
+  .hamburguer.is-active:before{
+  transform: rotate(-45deg) translate(-8px, 6px);
+  
+  }
+  .hamburguer.is-active:after{
+    transform: rotate(45deg) translate(-9px, -8px);
+    
+    }
+  .hamburguer.is-active .bar{
+    opacity: 0;
+  }
+  .mobile-nav{
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    min-height: 100vh;
+    z-index: 8;
+    background-color: #ffb700;
+    padding-top: 120px;
+    transition: all 0.3s ease-in-out;
+  }
+  .mobile-nav.is-active{
+    left: 0;
+  }
+  .mobile-nav a{
+    display: block;
+    margin: 0 auto 16px;
+    width: 100%;
+    font-family: 'swiss-721-medium-bt';
+  
+    max-width: 200px;
+    text-align: center;
+    margin-bottom: 16px;
+    padding: 12px 16px;
+    background-color: #f2f1f1 ;
+    color: black;
+    text-decoration: none;
+    font-weight: 400;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  @media screen and (min-width:1000px){
+    .hamburguer{
+      display: none;
+    }
+  }
+
+
+  .img-jefe{
+    background-image: url('/img/Boss.webp');
+    height: 17rem;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.3s ease-in-out;
+}
+.img-roo{
+    background-image: url('../img/Team/Roo/Roo.jpg');
+    height: 17rem;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.3s ease-in-out;
+
+}
+.img-jefe:hover{
+    background-image: url('https://res.cloudinary.com/mdnpublicidad/image/upload/v1647562339/GIF_BOSS_WEB_1_dm5vjx.gif');
+    height: 17rem;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.img-roo:hover{
+background-image: url('https://res.cloudinary.com/mdnpublicidad/image/upload/v1649273682/Roo_1_bhwhsl.gif');
+}
+.img-paola{
+    background-image: url('../img/Team/Paola-Urdaneta/paola_urdaneta-0.jpg');
+    height: 17rem;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.3s ease-in-out;
+}
+.img-paola:hover{
+background-image: url('https://res.cloudinary.com/mdnpublicidad/image/upload/v1646503095/paola_urdaneta_xxpuct.gif');
+}
+.img-gaby{
+    background-image: url('../img/Team/Gabriela_Paredes/gabrielaParedes.jpg');
+    height: 17rem;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.3s ease-in-out;
+}
+.img-gaby:hover{
+background-image: url('https://res.cloudinary.com/mdnpublicidad/image/upload/v1646502824/gaby_paredes_q0dpzr.gif');
+}
+
+.img-raul{
+    background-image: url('../img/Team/Raul/raul-0.jpg');
+    height: 17rem;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.3s ease-in-out;
+}
+.img-raul:hover{
+background-image: url('https://res.cloudinary.com/mdnpublicidad/image/upload/v1646503110/raul_kjqmh9.gif');
+}
+.img-kathe{
+    background-image: url('../img/Team/Katherine_Mora/kathe.jpg');
+    height: 17rem;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.3s ease-in-out;
+}
+.img-kathe:hover{
+background-image: url('https://res.cloudinary.com/mdnpublicidad/image/upload/v1646502975/kathe_dk2n04.gif');
+}
+.img-isabella{
+    background-image: url('../img/Team/Isabella/isabella-0.jpg');
+    height: 17rem;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.3s ease-in-out;
+}
+.img-isabella:hover{
+background-image: url('https://res.cloudinary.com/mdnpublicidad/image/upload/v1646502872/isabella_jitonj.gif');
+}
+.img-sofiaL{
+    background-image: url('../img/Team/Sofia_Laureta/sofia_laur.jpg');
+    height: 17rem;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.3s ease-in-out;
+}
+.img-sofiaL:hover{
+background-image: url('https://res.cloudinary.com/mdnpublicidad/image/upload/v1646503166/sofia_laur_bwmwhy.gif');
+}
+.img-sabrina{
+    background-image: url('../img/Team/Sabrina/sabeina-0.jpg');
+    height: 17rem;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.3s ease-in-out;
+}
+.img-sabrina:hover{
+background-image: url('https://res.cloudinary.com/mdnpublicidad/image/upload/v1646503139/sabeina_a9yjir.gif');
+}
+.img-sophia-Barboza{
+    background-image: url('../img/Team/Sophia_Barboza/sophia_bar.jpg');
+    height: 17rem;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.3s ease-in-out;
+}
+.img-sophia-Barboza:hover{
+background-image: url('https://res.cloudinary.com/mdnpublicidad/image/upload/v1646503179/sophia_bar_zoyzw5.gif');
+}
+.img-Georgina{
+    background-image: url('../img/Team/Georgina/georgina-0.jpg');
+    height: 17rem;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.3s ease-in-out;
+}
+.img-Georgina:hover{
+background-image: url('https://res.cloudinary.com/mdnpublicidad/image/upload/v1646502835/georgina_sc2qgh.gif');
+}
+.img-jahony{
+    background-image: url('../img/Team/Jahony/jahony_pirela-0.jpg');
+    height: 17rem;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.3s ease-in-out;
+}
+.img-jahony:hover{
+background-image: url('https://res.cloudinary.com/mdnpublicidad/image/upload/v1646502883/jahony_pirela_sbmnx7.gif');
+}
+.img-jorgelis{
+    background-image: url('../img/Team/Jorgelis/jorgelis_avila-0.jpg');
+    height: 17rem;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.3s ease-in-out;
+}
+.img-jorgelis:hover{
+background-image: url('https://res.cloudinary.com/mdnpublicidad/image/upload/v1646502912/jorgelis_avila_dzdtp0.gif');
+}
+.img-juansierra{
+    background-image: url('../img/Team/JuanP_Sierra/juan_p_sierra.jpg');
+    height: 17rem;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.3s ease-in-out;
+}
+.img-juansierra:hover{
+background-image: url('https://res.cloudinary.com/mdnpublicidad/image/upload/v1646502940/juan_p_mfinal.gif');
+}
+.img-mariaUrdaneta{
+    background-image: url('../img/Team/Maria_Urdaneta/maria_jose.jpg');
+    height: 17rem;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.3s ease-in-out;
+}
+.img-mariaUrdaneta:hover{
+background-image: url('https://res.cloudinary.com/mdnpublicidad/image/upload/v1646503010/maria_jose_ur_icbc68.gif');
+}
+.img-AndreaSanchez{
+    background-image: url('../img/Team/Andrea_Sanchez/andresanchez-0.jpg');
+    height: 17rem;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.3s ease-in-out;
+}
+.img-AndreaSanchez:hover{
+background-image: url('https://res.cloudinary.com/mdnpublicidad/image/upload/v1646502737/andre_sanchez_mlt1on.gif');
+}
+.img-gustavoHernandez{
+    background-image: url('../img/Team/Gustavo_Hernandez/gustavo_her.jpg');
+    height: 17rem;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.3s ease-in-out;
+}
+.img-gustavoHernandez:hover{
+background-image: url('https://res.cloudinary.com/mdnpublicidad/image/upload/v1646502849/gustavo_her_mhfvvy.gif');
+}
+.img-victor-rueda{
+    background-image: url('../img/Team/Victor/victor-0.jpg');
+    height: 17rem;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.3s ease-in-out;
+}
+.img-victor-rueda:hover{
+background-image: url('https://res.cloudinary.com/mdnpublicidad/image/upload/v1646503192/victor_kwzgjh.gif');
+}
+.img-maria-colmenarez{
+    background-image: url('../img/Team/MariaColmenarez/andreina-0.jpg');
+    height: 17rem;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.3s ease-in-out;
+}
+.img-maria-colmenarez:hover{
+background-image: url('https://res.cloudinary.com/mdnpublicidad/image/upload/v1646502758/andreina_qgje6h.gif');
+}
+.img-paolaMedina{
+    background-image: url('../img/Team/PaolaMedina/PaolaMedinadiseno.jpg');
+    height: 17rem;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.3s ease-in-out;
+}
+.img-paolaMedina:hover{
+background-image: url('https://res.cloudinary.com/mdnpublicidad/image/upload/v1646503069/paola_medina_vmgclf.gif');
+}
+.img-david-ferrer{
+    background-image: url('../img/Team/David_Ferrer/david-0.jpg');
+    height: 17rem;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.3s ease-in-out;
+}
+.img-david-ferrer:hover{
+background-image: url('https://res.cloudinary.com/mdnpublicidad/image/upload/v1646502785/david_jvjmed.gif');
+}
+.img-silviaH{
+    background-image: url('../img/Team/SilviaH/silvia-0.jpg');
+    height: 17rem;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.3s ease-in-out;
+}
+.img-silviaH:hover{
+background-image: url('https://res.cloudinary.com/mdnpublicidad/image/upload/v1646503154/silvia_hnwhtt.gif');
+}
+.img-emiliana{
+    background-image: url('../img/Team/Emiliana/emiliana-0.jpg');
+    height: 17rem;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.3s ease-in-out;
+}
+.img-emiliana:hover{
+background-image: url('https://res.cloudinary.com/mdnpublicidad/image/upload/v1646502807/emiliana_gubie0.gif');
+}
+.img-yovan{
+    background-image: url('../img/Team/Yovan/yovan-0.jpg');
+    height: 17rem;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.3s ease-in-out;
+}
+.img-yovan:hover{
+background-image: url('https://res.cloudinary.com/mdnpublicidad/image/upload/v1646503226/yovan_k2flhn.gif');
+}
+.img-nathalya{
+    background-image: url('../img/Team/Nathalya/nathalia-0.jpg');
+    height: 17rem;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.3s ease-in-out;
+}
+.img-nathalya:hover{
+background-image: url('https://res.cloudinary.com/mdnpublicidad/image/upload/v1646503053/nathalia_z92ygl.gif');
+}
+.img-juanLaureta{
+    background-image: url('../img/Team/JuanLaureta/juan_laur-0.jpg');
+    height: 17rem;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.3s ease-in-out;
+}
+.img-juanLaureta:hover{
+background-image: url('https://res.cloudinary.com/mdnpublicidad/image/upload/v1646502956/juan_laur_ighjoa.gif');
+}
+.img-cynthia{
+    background-image: url('../img/Team/Cinthya/cinthya-0.jpg');
+    height: 17rem;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.3s ease-in-out;
+}
+.img-cynthia:hover{
+background-image: url('https://res.cloudinary.com/mdnpublicidad/image/upload/v1646502771/cinthya_xdqcgp.gif');
+}
+.img-allan{
+    background-image: url('../img/Team/Allan/allan-0.jpg');
+    height: 17rem;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.3s ease-in-out;
+}
+.img-allan:hover{
+background-image: url('https://res.cloudinary.com/mdnpublicidad/image/upload/v1646502699/allan_gr5xdc.gif');
+}
+.img-andreagarcia{
+    background-image: url('../img/Team/Andrea_Garcia/andregarcia-0.jpg');
+    height: 17rem;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.3s ease-in-out;
+}
+.img-andreagarcia:hover{
+background-image: url('https://res.cloudinary.com/mdnpublicidad/image/upload/v1646502723/andre_garcia_l9w7vw.gif');
+}
+.img-joel{
+    background-image: url('../img/Team/Joel/joel-0.jpg');
+    height: 17rem;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.3s ease-in-out;
+}
+.img-joel:hover{
+background-image: url('https://res.cloudinary.com/mdnpublicidad/image/upload/v1646502898/joel_kltqiu.gif');
+}
+.img-wissam{
+    background-image: url('../img/Team/Wissam/wissan-0.jpg');
+    height: 17rem;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.3s ease-in-out;
+}
+.img-wissam:hover{
+background-image: url('https://res.cloudinary.com/mdnpublicidad/image/upload/v1646503214/wissan_m2isvz.gif');
+}
+.img-paolaPacheco{
+    background-image: url('../img/Team/PaolaPacheco/paola_pacheco.jpg');
+    height: 17rem;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.3s ease-in-out;
+}
+.img-paolaPacheco:hover{
+background-image: url('https://res.cloudinary.com/mdnpublicidad/image/upload/v1646503083/paola_pacheco_ngizxe.gif');
+}
+.img-mariaVictoria{
+    background-image: url('../img/Team/Maria_Victoria/maria_vicctoria-0.jpg');
+    height: 17rem;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.3s ease-in-out;
+}
+.img-mariaVictoria:hover{
+background-image: url('https://res.cloudinary.com/mdnpublicidad/image/upload/v1646503024/maria_vicctoria_whyzaw.gif');
+}
+.img-gustavoOlivares{
+    background-image: url('../img/Team/GustavoLinares/gustavo_olivares.jpg');
+    height: 17rem;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.3s ease-in-out;
+}
+.img-gustavoOlivares:hover{
+background-image: url('https://res.cloudinary.com/mdnpublicidad/image/upload/v1646502860/gustavo_olivares_pltr2g.gif');
+}
+.img-anabella{
+    background-image: url('../img/Team/Anabella/anabella-0.jpg');
+    height: 17rem;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.3s ease-in-out;
+}
+.img-anabella:hover{
+background-image: url('https://res.cloudinary.com/mdnpublicidad/image/upload/v1646502712/anabella_ueynmh.gif');
+}
+.img-diego{
+    background-image: url('../img/Team/Diego/diego-0.jpg');
+    height: 17rem;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.3s ease-in-out;
+}
+.img-diego:hover{
+background-image: url('https://res.cloudinary.com/mdnpublicidad/image/upload/v1646502796/diego_ue5obf.gif');
+}
+.img-wilmer{
+    background-image: url('../img/Team/Wilmer/wilmer-0.jpg');
+    height: 17rem;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.3s ease-in-out;
+}
+.img-wilmer:hover{
+background-image: url('https://res.cloudinary.com/mdnpublicidad/image/upload/v1646503202/wilmer_emciqa.gif');
+}
+.img-leo{
+    background-image: url('../img/Team/Leo_Aldana/leo_aldana.jpg');
+    height: 17rem;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.3s ease-in-out;
+}
+.img-leo:hover{
+background-image: url('https://res.cloudinary.com/mdnpublicidad/image/upload/v1646502995/leo_aldana_y6kx1q.gif');
+}
+.img-mayber{
+    background-image: url('../img/Team/Mayber/mayber.jpg');
+    height: 17rem;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.3s ease-in-out;
+}
+.img-mayber:hover{
+background-image: url('https://res.cloudinary.com/mdnpublicidad/image/upload/v1647531590/mayber_pereira_trmqem.gif');
+}
+
+.img-jorgerodriguez{
+    background-image: url('../img/Team/Jorge_Rodriguez/jorge_gutierrez.jpg');
+    height: 17rem;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.3s ease-in-out;
+}
+.img-jorgerodriguez:hover{
+background-image: url('https://res.cloudinary.com/mdnpublicidad/image/upload/v1647531634/jorge_gutierrez_sl4ivj.gif');
+}
+.img-felipe{
+    background-image: url('../img/Team/Felipe/Felipe.jpg');
+    height: 17rem;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.3s ease-in-out;
+}
+.img-felipe:hover{
+background-image: url('https://res.cloudinary.com/mdnpublicidad/image/upload/v1647531604/43_zndydq.gif');
+}
+.img-rita{
+    background-image: url('../img/Team/Rita/Rita.jpg');
+    height: 17rem;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.3s ease-in-out;
+}
+.img-rita:hover{
+background-image: url('https://res.cloudinary.com/mdnpublicidad/image/upload/v1647561503/rita_rjuq5b.gif');
+}
+.img-rita{
+    background-image: url('../img/Team/Rita/Rita.jpg');
+    height: 17rem;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.3s ease-in-out;
+}
+.img-rita:hover{
+background-image: url('https://res.cloudinary.com/mdnpublicidad/image/upload/v1647561503/rita_rjuq5b.gif');
+}
+.img-stephanie{
+    background-image: url('../img/Team/StephaniePortillo/StephaniePortillo.jpg');
+    height: 17rem;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.3s ease-in-out;
+}
+.img-stephanie:hover{
+background-image: url('https://res.cloudinary.com/mdnpublicidad/image/upload/v1647531765/stephanie_portillo_grzlqp.gif');
+}
+.img-fondoAmarillo{
+    background-image: url('../img/Team/Maria_Victoria/maria_vicctoria-0.jpg');
+    height: 17rem;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.3s ease-in-out;
+}
+.img-gabrielaOjeda{
+    background-image: url('../img/Team/GabrielaOjeda/gabriela_ojeda-0.jpg');
+    height: 17rem;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.3s ease-in-out;
+}
+.img-gabrielaOjeda:hover{
+background-image: url('https://res.cloudinary.com/mdnpublicidad/image/upload/v1647531621/gabriela_ojeda_pqf5dx.gif');
+}
+.img-PaolaMolina{
+    background-image: url('../img/Team/Paola_Medina/paola_medina.jpg');
+    height: 17rem;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.3s ease-in-out;
+}
+.img-PaolaMolina:hover{
+background-image: url('https://res.cloudinary.com/mdnpublicidad/image/upload/v1647531651/paola_molina_z5sicz.gif');
+}
+.img-samantha{
+    background-image: url('../img/Team/Samantha/Sam.jpg');
+    height: 17rem;
+    background-size: cover;
+    background-position: center;
+}
+.img-dulcy{
+    background-image: url('../img/Team/Dulcy/dulcy.jpg');
+    height: 17rem;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.3s ease-in-out;
+}
+.img-dulcy:hover{
+background-image: url('https://res.cloudinary.com/mdnpublicidad/image/upload/v1649778353/dulcy_yes5px.gif');
+}
+.img-bianey{
+    background-image: url('../img/Team/Bianey/bianey.jpg');
+    height: 17rem;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.3s ease-in-out;
+}
+.img-bianey:hover{
+background-image: url('https://res.cloudinary.com/mdnpublicidad/image/upload/v1649778369/bianey_efy65h.gif');
+}
+.img-jenni{
+    background-image: url('../img/Team/Jenn/jenni.jpg');
+    height: 17rem;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.3s ease-in-out;
+}
+.img-jenni:hover{
+background-image: url('https://res.cloudinary.com/mdnpublicidad/image/upload/v1649778382/jenni_rterel.gif');
+}
+.img-mariana{
+    background-image: url('../img/Team/Mariana_Monsalves/Mariana_Monsalbe.jpg');
+    height: 17rem;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.3s ease-in-out;
+}
+.img-mariana:hover{
+background-image: url('https://res.cloudinary.com/mdnpublicidad/image/upload/v1649778394/Mariana_Monsalbe_anfxsl.gif');
+}
+.img-alexandra{
+    background-image: url('../img/Team/Alexandra_TURRIS/Alexandra-0.jpg');
+    height: 17rem;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.3s ease-in-out;
+}
+.img-alexandra:hover{
+background-image: url('https://res.cloudinary.com/mdnpublicidad/image/upload/v1656978761/Alexandra_ej8l0i.gif');
+}
+.img-mariaM{
+    background-image: url('../img/Team/Maria_Matos/MariaJose-0.jpg');
+    height: 17rem;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.3s ease-in-out;
+}
+.img-mariaM:hover{
+background-image: url('https://res.cloudinary.com/mdnpublicidad/image/upload/v1656978772/Maria_Jose_kc3idx.gif');
+}
+/* Media Queries */
+@media screen and (max-width: 700px) {
+    .titulo-team h1  {
+        font-size: 2rem ;
+    }
+    .telf{
+        height: 23rem;
+    }
+    .boton-telegram-contenedor{
+        right:-1rem;
+    }
+    .c-lerp-block{
+        font-size: 2.5rem;
+    }
+    .titulo-nosotros h2{
+        font-size: 2.5rem;
+    }
+}
+@media screen and (min-width:701px) and (max-width:1023px){
+    .col-xl-3{
+        width:44%;
+    }
+}
+@media screen and (min-width:1024px) and (max-width:1030px){
+    .col-xl-3{
+        width:34%;
+    }
+}
+@media screen and (min-width:1400px){
+    .loader video{
+        width: 58rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

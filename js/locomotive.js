@@ -1,4 +1,3 @@
-
 let servicios = document.querySelector('#boton-servicios');
 let iconoServicio = document.querySelector('.icono-servicios');
 // let boton1 = document.querySelector('#boton---1');
@@ -9,11 +8,24 @@ let target = document.querySelector('#servicios--');
 let logofolio = document.querySelectorAll('.portafolio');
 let teamprueba = document.querySelector('#team-prueba')
 let contacto = document.querySelector('#seccion-contacto')
-let scrollContainer = document.querySelector("[data-scroll-container]");
 let mobileMenu = document.querySelectorAll('.mobile-nav a');
 let target5 = document.querySelector('#inicio');
 let target2 = document.querySelector('#my-section-');
 let targetLogoNavbar = document.querySelector('#logo-navbar');
+
+let scrollContainer = document.querySelector("[data-scroll-container]");
+imagesLoaded(scrollContainer, { background: true }, function () {
+  setTimeout(() => {
+    locoScroll.update();
+  }, 5000); 
+});
+
+// Set timeout for resie viewport.
+setTimeout(locomotiveHeightBug, 3500);
+function locomotiveHeightBug(){
+  window.dispatchEvent(new Event('resize'));
+}
+
 const locoScroll = new LocomotiveScroll({
     el: document.querySelector("[data-scroll-container]"),
     smooth: true,
@@ -21,16 +33,17 @@ const locoScroll = new LocomotiveScroll({
     getDirection: true,
 
   });
-  imagesLoaded(scrollContainer, { background: true }, function () {
-    setTimeout(() => {
-      locoScroll.update();
-    }, 5000); 
-  });
+
+  
+
+  // $(window).load(function () { locoScroll.update(); ScrollTrigger.update; });
+
 servicios.addEventListener('click', () => {
   setTimeout(() => {
     locoScroll.update();
  }, 1000); 
 });
+
 iconoServicio.addEventListener('click', () => {
   setTimeout(() => {
     locoScroll.update();
@@ -74,7 +87,6 @@ for (let i = 0; i < mobileMenu.length; i++) {
   mobileMenu[i].addEventListener('click', () => {
     if (i === 1){
       locoScroll.scrollTo(target)
-      console.log(target2)
       } else if (i === 2){
         locoScroll.scrollTo(target2)
   
@@ -120,9 +132,7 @@ for (let index = 0; index < links.length; index++) {
   }
   contacto.addEventListener('click', () => {
     locoScroll.scrollTo(target4)
-    console.log("Entró")
   });
-  console.log(contacto)
 // MDN CHILE
 
 // each time Locomotive Scroll updates, tell ScrollTrigger to update too (sync positioning)
@@ -178,6 +188,7 @@ let tl3= gsap.timeline({
     tl3.from("#imagen--1", {x:-200, opacity:0, duration:1})
     .from(".contenido-portafolio", {y:210, opacity:0, duration:1}, "-=1")
 
+// Esto estaba comentado
 // let tl4= gsap.timeline({
 //       scrollTrigger: {
 //         trigger: "#my-sectionsss",

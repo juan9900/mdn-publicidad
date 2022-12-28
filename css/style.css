@@ -959,7 +959,7 @@ h1.texto.scroll-class {
 }
 
 .imagen-3 {
-  background-image: url("../img/minipets.webp");
+  background-image: url("https://res.cloudinary.com/mdnclientes/image/upload/v1672241448/paginaMDNImagenes/minipets_wyoids.webp");
   background-position: center;
   background-size: cover;
   height: 100vh;
@@ -1148,7 +1148,7 @@ button {
   width: 8rem;
 }
 .boton-portafolio {
-  background-image: url("../img/boton1.png");
+  background-image: url("https://res.cloudinary.com/mdnclientes/image/upload/v1672241450/paginaMDNImagenes/boton1_duoftj.png");
   background-size: cover;
   width: 8rem;
   height: 8rem;

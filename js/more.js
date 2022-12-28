@@ -1,6 +1,7 @@
 let servicios = document.querySelector('#boton-servicios');
 let tituloServicio = document.querySelector('.servicios-titulo');
 let parrafosServicio = document.querySelectorAll('.servicios-content');        
+// TODO: NOT FOUND
 let image = document.querySelector('.imagen-2');
 let iconoServicio = document.querySelector('.icono-servicios');
 let boton1 = document.querySelector('#boton---1');
@@ -290,6 +291,7 @@ for(let index = 0; index < logofolio.length; index++){
                 }else if (index == 4) {
                     logofolio[4].classList.add('color5')
                 }
+                
                 
             }else{
                 icono.classList.add('none');

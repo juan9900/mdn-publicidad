@@ -17,3 +17,4 @@ function profesiones(){
         portafoliopdf.setAttribute("style", 'display:block');
     }
    }
+   

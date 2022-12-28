@@ -92,15 +92,16 @@ ScrollTrigger.create({
       .from(".row-diseño-coordinador",{x:-200, opacity:0, duration:1.5})
     .from(".servicios-content", { opacity:0, duration:1}, "-=1")
 
-let tl2= gsap.timeline({
-      scrollTrigger: {
-        trigger: ".section-team",
-        start: " bottom center",
-        scroller: ".smooth-scroll",
-      }
-    })
-    tl2.from(".imagen-2", {x:-200, opacity:0, duration:1.5})
-    .from(".team-content", { opacity:0, duration:1}, "-=1")
+    //TODO: NOT FOUND
+// let tl2= gsap.timeline({
+//       scrollTrigger: {
+//         trigger: ".section-team",
+//         start: " bottom center",
+//         scroller: ".smooth-scroll",
+//       }
+//     })
+//     tl2.from(".imagen-2", {x:-200, opacity:0, duration:1.5})
+//     .from(".team-content", { opacity:0, duration:1}, "-=1")
 
 
 let tl3= gsap.timeline({
@@ -144,25 +145,28 @@ let tl55= gsap.timeline({
 
         
 // Animaciones MDN - Chile
-let tl6= gsap.timeline({
-  scrollTrigger: {
-    trigger: ".texto-nosotros",
-    // start: " top center",
-    scroller: ".smooth-scroll",
-  }
-});
-tl6.from(".titulo-nosotross", {x:-200, opacity:0, duration:1.5});
-tl6.from(".nosotros-p", {y:200, opacity:0, duration:1.5},"-=1");
+// TODO: NOT FOUND
+// let tl6= gsap.timeline({
+//   scrollTrigger: {
+//     trigger: ".texto-nosotros",
+//     // start: " top center",
+//     scroller: ".smooth-scroll",
+//   }
+// });
+// tl6.from(".titulo-nosotross", {x:-200, opacity:0, duration:1.5});
+// tl6.from(".nosotros-p", {y:200, opacity:0, duration:1.5},"-=1");
 
-let tl7= gsap.timeline({
-  scrollTrigger: {
-    trigger: ".nosotros",
-    // start: " top center",
-    scroller: ".smooth-scroll",
-  }
-});
-tl7.from(".titulos-nosotros", {x:-200, opacity:0, duration:1.5},);
-tl6.from(".contenido-nosotros", {y:200, opacity:0, duration:1.5}, "-=1");
+// TODO: NOT FOUND
+// let tl7= gsap.timeline({
+//   scrollTrigger: {
+//     trigger: ".nosotros",
+//     // start: " top center",
+//     scroller: ".smooth-scroll",
+//   }
+// });
+// tl7.from(".titulos-nosotros", {x:-200, opacity:0, duration:1.5},);
+// TODO: NOT FOUND
+// tl6.from(".contenido-nosotros", {y:200, opacity:0, duration:1.5}, "-=1");
 
 let tl8= gsap.timeline({
   scrollTrigger: {

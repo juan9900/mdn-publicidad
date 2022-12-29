@@ -57,6 +57,7 @@
   z-index: -1;
   position: relative;
   margin-bottom: 2.5rem;
+  clip-path: polygon(9% 0, 100% 0, 100% 100%, 9% 100%);
 }
 .hamburguer {
   position: relative;
@@ -1682,6 +1683,7 @@ button {
   }
   .muñecos-team {
     margin-bottom: 0rem;
+    clip-path: polygon(4% 0, 100% 0, 100% 100%, 4% 100%);
   }
   .imagen-3 {
     top: 24rem;

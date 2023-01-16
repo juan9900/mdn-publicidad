@@ -1228,6 +1228,7 @@ button {
 
 .imagen-logo-- img {
   width: -webkit-fill-available;
+  width: -moz-available;
   padding-top: 1rem;
 }
 .imagen {

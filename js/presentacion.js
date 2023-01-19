@@ -71,12 +71,12 @@ $(document).ready(function(){
             console.log('generating image');
             console.log(brandFileName);
             $(carouselBrandImages).empty();
-            for(let i = 0; i<imagesQty; i++){
-                console.log(`brandFileName-${i+1}`)
-                console.log(`generated: ${i+1}`);
+            for(let i = 1; i<=imagesQty; i++){
+                console.log(`brandFileName-${i}`)
+                console.log(`generated: ${i}`);
                 $(carouselBrandImages).append(`
-                <div class="carousel-item ${i === 0 ? 'active' : ''}">
-                    <img src="/img/presentacion/${brandFileName}-${i+1}.jpg" class="d-block more-product-img" alt="...">
+                <div class="carousel-item ${i === 1 ? 'active' : ''}">
+                    <img src="/img/presentacion/${brandFileName}-${i}.jpg" class="d-block more-product-img" alt="...">
                 </div>`)
             }
 

@@ -1382,338 +1382,7 @@ button {
     transform: translateY(0);
   }
 }
-/* Final Logo Clientes */
-@media screen and (max-width: 700px) {
-  .nav {
-    display: none;
-  }
-  h1.texto.scroll-class {
-    font-size: 3rem;
-    line-height: 2rem;
-  }
-  section:first-child {
-    padding: 1em;
-  }
-  .redes-sociales {
-    margin-top: 1rem;
-  }
 
-  .navbar {
-    padding-bottom: 5rem;
-  }
-  #titulos-webb {
-    width: 13.1rem;
-  }
-  #team-titulo {
-    width: 8rem;
-  }
-  /* .texto p{
-    display: none;
-  }
-  .texto input {
-    display: none;
-  } */
-  #titulo-portafolioss {
-    width: 13.1rem;
-  }
-  .imagen-1 {
-    height: 60vh;
-    margin-top: 3rem;
-  }
-  .down {
-    height: 0vh !important;
-  }
-  .imagen {
-    width: 45% !important;
-    margin: auto;
-  }
-  .texto-branding {
-    font-size: 0.8rem;
-  }
-  section:nth-child(2) {
-    height: auto;
-  }
-  section:nth-child(3) {
-    padding: 1rem;
-    height: auto;
-  }
-  section:nth-child(4) {
-    height: auto;
-    padding-bottom: 0rem;
-  }
-  .imagen-2 {
-    left: -2rem;
-    width: 101vw;
-    top: 0rem;
-    height: 60vh;
-  }
-  .marquee {
-    left: 0rem;
-    width: 100%;
-  }
-  .marqueeScroll,
-  .marqueeScroll2 {
-    font-size: 3.6rem;
-  }
-  .custom-p {
-    width: auto;
-    text-align: center;
-  }
-  .c-lerp-block {
-    font-size: 3rem;
-  }
-  .c-lerp-block:last-child {
-    text-align: center;
-  }
-  .imagen-3 {
-    top: 0rem;
-    left: -1rem;
-    width: 101vw;
-  }
-  .c-direction-block_item span {
-    font-size: 2.5rem;
-    padding: 15px 20px;
-  }
-  .splide__slide img {
-    width: 4rem;
-  }
-  .splide__slide h4 {
-    font-size: 0.7rem;
-  }
-  #my-sections {
-    width: 100%;
-    height: auto;
-    padding: 0rem;
-  }
-  section {
-    padding: 0rem;
-  }
-  #splide_trackk {
-    height: 57.5rem;
-  }
-  .ayudarte span {
-    font-size: 1.5rem;
-  }
-  .contenido-ayudarte p {
-    font-size: 0.9rem;
-  }
-  .imagen-telefono img {
-    display: none;
-  }
-  form {
-    margin-left: 0rem;
-  }
-  .texto p {
-    font-size: 0.9rem;
-  }
-  .letras {
-    font-size: 3rem;
-  }
-  .imagen-logo- {
-    margin-top: 28rem;
-  }
-  .imagen-logo- img {
-    width: 100%;
-  }
-  .imagen-1 {
-    height: 40vh;
-  }
-  .imagen-2 {
-    height: 40vh;
-  }
-  #my-sectionsss {
-    padding: 0rem;
-  }
-  .splide__slide__container {
-    text-align: center;
-  }
-  #navbarr {
-    height: 6rem;
-  }
-  .icono {
-    position: fixed;
-    left: 19rem;
-    top: 14rem;
-  }
-  .imagen-logo-- {
-    width: auto;
-  }
-  .navbar-brand img {
-    width: 4rem;
-    margin-left: 0rem;
-  }
-  #paradigma {
-    line-height: 3.5rem;
-    padding-top: 16.5rem;
-    font-size: 3rem;
-  }
-  .imagen-logo- {
-    width: auto;
-  }
-  .servicios {
-    padding-top: 2rem;
-  }
-  .redes-sociales {
-    margin-top: 2rem;
-  }
-  .texto {
-    text-align: left;
-  }
-  .imagen-telefono {
-    margin-top: 0rem;
-  }
-  .contenido-ayudarte {
-    text-align: center;
-  }
-  .servicios {
-    padding-top: 2rem;
-  }
-  #my-sectionsss {
-    height: auto;
-  }
-  .boton-portafolio {
-    left: 0rem;
-    justify-content: center;
-    margin: auto;
-  }
-  .servicios-content {
-    width: inherit;
-    margin-left: 0rem;
-  }
-  .team-content {
-    margin-left: 0rem;
-  }
-  .imagen-2 {
-    left: -1rem;
-    width: 100vw;
-    margin-top: 5rem;
-  }
-  .contenido-portafolio {
-    text-align: center;
-    padding-left: 0rem;
-  }
-  .contenido-portafolio p {
-    width: inherit;
-  }
-
-  .six {
-    top: 13%;
-  }
-  .logo-grande {
-    width: 10.2rem !important;
-  }
-  .c-direction-block_item span {
-    font-size: 3.5rem;
-    padding: 20px 20px;
-  }
-  .c-section {
-    margin-bottom: 2vh;
-  }
-  .c-lerp-block:last-child {
-    font-size: 1.8rem;
-  }
-  .c-lerp-block:last-child {
-    margin-bottom: 0rem;
-  }
-  .splide__slide img {
-    width: 6.4rem;
-  }
-  .video-telefono {
-    display: none;
-  }
-  .corazones {
-    display: none;
-  }
-  #splide_trackk {
-    height: 51.5rem;
-  }
-  .ayudarte span {
-    font-size: 1.9rem;
-  }
-  .titulo-servicios h1 {
-    font-size: 2.5rem;
-  }
-  .contenido-servicios {
-    width: inherit;
-    text-align: center;
-  }
-  .contenido-servicios p {
-    padding-left: 0rem;
-    width: inherit;
-    text-align: center;
-  }
-  .contenido-servicios span {
-    padding-left: 0rem;
-  }
-  .padding-portafolio {
-    padding-left: 999rem;
-  }
-  .contenido-portafolio {
-    padding-left: 0rem !important;
-  }
-  .imagen-logo- {
-    position: relative;
-    z-index: 99999;
-  }
-  .imagen-logo-- {
-    position: relative;
-    z-index: 99999;
-    margin-top: 26rem;
-  }
-  .imagen {
-    margin-top: 2rem;
-  }
-  #inicio video {
-    margin-top: 3rem;
-  }
-  .logoCliente-grande {
-    width: 6.4rem !important;
-  }
-  .margin-clientes {
-    margin-top: 0rem;
-  }
-  .logoCliente-intercargo {
-    width: 6.4rem !important;
-    margin-top: 0rem;
-  }
-  .boton-team {
-    width: 80%;
-  }
-  .imagen-2 {
-    margin-top: -0.3rem;
-  }
-  .muñecos-team {
-    margin-bottom: 0rem;
-  }
-  .imagen-3 {
-    top: 24rem;
-  }
-  #boton-servicios {
-    left: 33%;
-    top: 30%;
-  }
-  .team-videosection {
-    position: inherit !important;
-    height: 40vh;
-  }
-  .team-videosection video {
-    width: 100%;
-    height: 30%;
-    left: 0rem;
-  }
-  #boton-team-- {
-    position: relative;
-    z-index: 99999999999999999999999999999999999999999999999999999999999999999999999999999999999999;
-    top: -11rem !important;
-    left: 0% !important;
-  }
-  .footer-info- {
-    display: none !important;
-  }
-  .footer-definitivo {
-    display: none;
-  }
-}
 .clientes-texto {
   font-family: "swiss-721-medium-bt";
 }
@@ -1749,214 +1418,7 @@ button {
   justify-content: center;
   align-items: center;
 }
-@media screen and (min-width: 701px) and (max-width: 1024px) {
-  h1.texto.scroll-class {
-    font-size: 5rem;
-  }
-  .imagen-1 {
-    height: 60vh;
-    width: 102vw;
-  }
-  section:first-child {
-    padding: 4rem;
-  }
-  .corazon1 {
-    display: none;
-  }
-  .corazon2 {
-    display: none;
-  }
-  section:nth-child(3) {
-    padding: 0rem;
-    height: auto;
-  }
-  section:nth-child(2) {
-    height: auto;
-  }
-  .custom-p {
-    width: 100%;
-    text-align: center;
-  }
-  .imagen-2 {
-    height: 60vh;
-    top: 0rem;
-    width: 102vw;
-  }
-  .marquee {
-    width: 121%;
-  }
-  .nav {
-    display: none;
-  }
-  .imagen-3 {
-    width: 102vw;
-    top: 0rem;
-  }
-  #my-sections {
-    padding: 3.5rem;
-  }
-  #my-sectionsss {
-    height: auto;
-  }
-  #nuevo-botonteam {
-    width: 16rem;
-  }
-  .imagen-telefono img {
-    display: none;
-  }
-  .contenido-ayudarte {
-    margin-top: 1rem;
-  }
-  .c-section {
-    display: none;
-  }
-  .icono {
-    left: 41rem;
-    top: 16rem;
-    width: 0rem;
-    position: fixed;
-    z-index: 99999999999999999999999;
-  }
-  #inicio {
-    margin-top: 2rem;
-  }
 
-  .team-content {
-    width: 90% !important;
-    margin: auto !important;
-  }
-  .servicios-content {
-    margin-left: 0rem;
-  }
-  .team-content {
-    margin-left: 0rem;
-  }
-  .contenido-servicios {
-    width: 100%;
-    text-align: center;
-  }
-  .icono-servicios {
-    left: 42rem;
-  }
-
-  .contenido-servicios p {
-    padding-left: 0rem;
-    text-align: center;
-    width: 100%;
-  }
-  .imagen {
-    width: 100%;
-    margin-left: 0rem;
-    text-align: center;
-  }
-  .contenido-servicios span {
-    padding-left: 0rem;
-  }
-  .contenido-portafolio {
-    position: relative;
-    padding-left: 0rem !important;
-  }
-  .contenido-portafolio p {
-    text-align: center;
-    width: 100%;
-  }
-  #servicios-col {
-    padding-bottom: 7rem;
-  }
-  .imagen-logo- {
-    margin-top: 31rem;
-    width: 100%;
-    position: relative;
-  }
-  .imagen-logo-- {
-    width: 100%;
-    margin-top: 31rem;
-    position: relative;
-  }
-  .imagen-logo-- img {
-    width: 25rem;
-  }
-  section:nth-child(4) {
-    padding-bottom: 0rem;
-  }
-  .c-lerp-block:last-child {
-    font-size: 2rem;
-  }
-  .splide__slide img {
-    width: 6rem;
-  }
-  #splide_trackk {
-    height: 51.5rem;
-  }
-  .video-telefono {
-    display: none;
-  }
-  .servicios {
-    padding-top: 1rem;
-  }
-  .ayudarte span {
-    font-size: 2rem;
-  }
-  .contenido-ayudarte {
-    text-align: center;
-  }
-  .contenido-ayudarte p {
-    font-size: 1rem;
-  }
-  form {
-    margin-left: 0rem;
-  }
-  .navbar-brand img {
-    margin-left: 1rem;
-  }
-  #my-sections {
-    height: auto;
-  }
-  .logoCliente-grande {
-    width: 6.4rem !important;
-  }
-  .margin-clientes {
-    margin-top: 0rem;
-  }
-  .logoCliente-intercargo {
-    width: 6.4rem !important;
-    margin-top: 0rem;
-  }
-  .boton-portafolio {
-    left: 0rem;
-    margin: auto;
-  }
-  #nuevo-botonteam {
-    margin-top: 0rem;
-  }
-  .muñecos-team {
-    margin-bottom: -1rem;
-  }
-  .imagen-3 {
-    top: 24rem;
-  }
-  .boton-portafolio {
-    left: 40%;
-    top: 40%;
-  }
-  #boton-team-- {
-    top: 76%;
-    left: 40%;
-  }
-  section:nth-child(3) {
-    height: 95rem;
-  }
-  .team-videosection video {
-    height: 49vh;
-    width: 100%;
-  }
-  .footer-info- {
-    display: none !important;
-  }
-  .footer-definitivo {
-    display: none;
-  }
-}
 @media screen and (min-width: 540px) and (max-width: 541px) {
   .boton-portafolio {
     padding-top: 30%;
@@ -2332,7 +1794,8 @@ body.body-presentation {
   flex-direction: column;
   justify-content: flex-start;
 }
-
+@media screen and (min-width: 500px) {
+}
 @media screen and (min-width: 240px) and (max-width: 360px) {
   h1.texto.scroll-class {
     font-size: 2.5rem;
@@ -2719,6 +2182,13 @@ height: 60rem;
 }
 /*# sourceMappingURL=style.css.map */
 
+@media screen and (min-width: 600px) and (max-width: 799px) {
+  .carousel-item img {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+
 @media screen and (max-width: 799px) {
   /* html {
     scroll-behavior: auto !important;
@@ -2772,5 +2242,550 @@ height: 60rem;
 
   #modalBrand .modal-content {
     height: 55vh;
+  }
+}
+/* Final Logo Clientes */
+@media screen and (max-width: 700px) {
+  .nav {
+    display: none;
+  }
+  h1.texto.scroll-class {
+    font-size: 3rem;
+    line-height: 2rem;
+  }
+  section:first-child {
+    padding: 1em;
+  }
+  .redes-sociales {
+    margin-top: 1rem;
+  }
+
+  .navbar {
+    padding-bottom: 5rem;
+  }
+  #titulos-webb {
+    width: 13.1rem;
+  }
+  #team-titulo {
+    width: 8rem;
+  }
+  /* .texto p{
+    display: none;
+  }
+  .texto input {
+    display: none;
+  } */
+  #titulo-portafolioss {
+    width: 13.1rem;
+  }
+  .imagen-1 {
+    height: 60vh;
+    margin-top: 3rem;
+  }
+  .down {
+    height: 0vh !important;
+  }
+  .imagen {
+    width: 45% !important;
+    margin: auto;
+  }
+  .texto-branding {
+    font-size: 0.8rem;
+  }
+  section:nth-child(2) {
+    height: auto;
+  }
+  section:nth-child(3) {
+    padding: 1rem;
+    height: auto;
+  }
+  section:nth-child(4) {
+    height: auto;
+    padding-bottom: 0rem;
+  }
+  .imagen-2 {
+    left: -2rem;
+    width: 101vw;
+    top: 0rem;
+    height: 60vh;
+  }
+  .marquee {
+    left: 0rem;
+    width: 100%;
+  }
+  .marqueeScroll,
+  .marqueeScroll2 {
+    font-size: 3.6rem;
+  }
+  .custom-p {
+    width: auto;
+    text-align: center;
+  }
+  .c-lerp-block {
+    font-size: 3rem;
+  }
+  .c-lerp-block:last-child {
+    text-align: center;
+  }
+  .imagen-3 {
+    top: 0rem;
+    left: -1rem;
+    width: 101vw;
+  }
+  .c-direction-block_item span {
+    font-size: 2.5rem;
+    padding: 15px 20px;
+  }
+  .splide__slide img {
+    width: 4rem;
+  }
+  .splide__slide h4 {
+    font-size: 0.7rem;
+  }
+  #my-sections {
+    width: 100%;
+    height: auto;
+    padding: 0rem;
+  }
+  section {
+    padding: 0rem;
+  }
+  #splide_trackk {
+    height: 57.5rem;
+  }
+  .ayudarte span {
+    font-size: 1.5rem;
+  }
+  .contenido-ayudarte p {
+    font-size: 0.9rem;
+  }
+  .imagen-telefono img {
+    display: none;
+  }
+  form {
+    margin-left: 0rem;
+  }
+  .texto p {
+    font-size: 0.9rem;
+  }
+  .letras {
+    font-size: 3rem;
+  }
+  .imagen-logo- {
+    margin-top: 28rem;
+  }
+  .imagen-logo- img {
+    width: 100%;
+  }
+  .imagen-1 {
+    height: 40vh;
+  }
+  .imagen-2 {
+    height: 40vh;
+  }
+  #my-sectionsss {
+    padding: 0rem;
+  }
+  .splide__slide__container {
+    text-align: center;
+  }
+  #navbarr {
+    height: 6rem;
+  }
+  .icono {
+    position: fixed;
+    left: 19rem;
+    top: 14rem;
+  }
+  .imagen-logo-- {
+    width: auto;
+  }
+  .navbar-brand img {
+    width: 4rem;
+    margin-left: 0rem;
+  }
+  #paradigma {
+    line-height: 3.5rem;
+    padding-top: 16.5rem;
+    font-size: 3rem;
+  }
+  .imagen-logo- {
+    width: auto;
+  }
+  .servicios {
+    padding-top: 2rem;
+  }
+  .redes-sociales {
+    margin-top: 2rem;
+  }
+  .texto {
+    text-align: left;
+  }
+  .imagen-telefono {
+    margin-top: 0rem;
+  }
+  .contenido-ayudarte {
+    text-align: center;
+  }
+  .servicios {
+    padding-top: 2rem;
+  }
+  #my-sectionsss {
+    height: auto;
+  }
+  .boton-portafolio {
+    left: 0rem;
+    justify-content: center;
+    margin: auto;
+  }
+  .servicios-content {
+    width: inherit;
+    margin-left: 0rem;
+  }
+  .team-content {
+    margin-left: 0rem;
+  }
+  .imagen-2 {
+    left: -1rem;
+    width: 100vw;
+    margin-top: 5rem;
+  }
+  .contenido-portafolio {
+    text-align: center;
+    padding-left: 0rem;
+  }
+  .contenido-portafolio p {
+    width: inherit;
+  }
+
+  .six {
+    top: 13%;
+  }
+  .logo-grande {
+    width: 10.2rem !important;
+  }
+  .c-direction-block_item span {
+    font-size: 3.5rem;
+    padding: 20px 20px;
+  }
+  .c-section {
+    margin-bottom: 2vh;
+  }
+  .c-lerp-block:last-child {
+    font-size: 1.8rem;
+  }
+  .c-lerp-block:last-child {
+    margin-bottom: 0rem;
+  }
+  .splide__slide img {
+    width: 6.4rem;
+  }
+  .video-telefono {
+    display: none;
+  }
+  .corazones {
+    display: none;
+  }
+  #splide_trackk {
+    height: 51.5rem;
+  }
+  .ayudarte span {
+    font-size: 1.9rem;
+  }
+  .titulo-servicios h1 {
+    font-size: 2.5rem;
+  }
+  .contenido-servicios {
+    width: inherit;
+    text-align: center;
+  }
+  .contenido-servicios p {
+    padding-left: 0rem;
+    width: inherit;
+    text-align: center;
+  }
+  .contenido-servicios span {
+    padding-left: 0rem;
+  }
+  .padding-portafolio {
+    padding-left: 999rem;
+  }
+  .contenido-portafolio {
+    padding-left: 0rem !important;
+  }
+  .imagen-logo- {
+    position: relative;
+    z-index: 99999;
+  }
+  .imagen-logo-- {
+    position: relative;
+    z-index: 99999;
+    margin-top: 26rem;
+  }
+  .imagen {
+    margin-top: 2rem;
+  }
+  #inicio video {
+    margin-top: 3rem;
+  }
+  .logoCliente-grande {
+    width: 6.4rem !important;
+  }
+  .margin-clientes {
+    margin-top: 0rem;
+  }
+  .logoCliente-intercargo {
+    width: 6.4rem !important;
+    margin-top: 0rem;
+  }
+  .boton-team {
+    width: 80%;
+  }
+  .imagen-2 {
+    margin-top: -0.3rem;
+  }
+  .muñecos-team {
+    margin-bottom: 0rem;
+  }
+  .imagen-3 {
+    top: 24rem;
+  }
+  #boton-servicios {
+    left: 33%;
+    top: 30%;
+  }
+  .team-videosection {
+    position: inherit !important;
+    height: 40vh;
+  }
+  .team-videosection video {
+    width: 100%;
+    height: 30%;
+    left: 0rem;
+  }
+  #boton-team-- {
+    position: relative;
+    z-index: 99999999999999999999999999999999999999999999999999999999999999999999999999999999999999;
+    top: -11rem !important;
+    left: 0% !important;
+  }
+  .footer-info- {
+    display: none !important;
+  }
+  .footer-definitivo {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 701px) and (max-width: 1024px) {
+  h1.texto.scroll-class {
+    font-size: 5rem;
+  }
+  .imagen-1 {
+    height: 60vh;
+    width: 102vw;
+  }
+  section:first-child {
+    padding: 4rem;
+  }
+  .corazon1 {
+    display: none;
+  }
+  .corazon2 {
+    display: none;
+  }
+  section:nth-child(3) {
+    padding: 0rem;
+    height: auto;
+  }
+  section:nth-child(2) {
+    height: auto;
+  }
+  .custom-p {
+    width: 100%;
+    text-align: center;
+  }
+  .imagen-2 {
+    height: 60vh;
+    top: 0rem;
+    width: 102vw;
+  }
+  .marquee {
+    width: 121%;
+  }
+  .nav {
+    display: none;
+  }
+  .imagen-3 {
+    width: 102vw;
+    top: 0rem;
+  }
+  #my-sections {
+    padding: 3.5rem;
+  }
+  #my-sectionsss {
+    height: auto;
+  }
+  #nuevo-botonteam {
+    width: 16rem;
+  }
+  .imagen-telefono img {
+    display: none;
+  }
+  .contenido-ayudarte {
+    margin-top: 1rem;
+  }
+  .c-section {
+    display: none;
+  }
+  .icono {
+    left: 41rem;
+    top: 16rem;
+    width: 0rem;
+    position: fixed;
+    z-index: 99999999999999999999999;
+  }
+  #inicio {
+    margin-top: 2rem;
+  }
+
+  .team-content {
+    width: 90% !important;
+    margin: auto !important;
+  }
+  .servicios-content {
+    margin-left: 0rem;
+  }
+  .team-content {
+    margin-left: 0rem;
+  }
+  .contenido-servicios {
+    width: 100%;
+    text-align: center;
+  }
+  .icono-servicios {
+    left: 42rem;
+  }
+
+  .contenido-servicios p {
+    padding-left: 0rem;
+    text-align: center;
+    width: 100%;
+  }
+  .imagen {
+    width: 100%;
+    margin-left: 0rem;
+    text-align: center;
+  }
+  .contenido-servicios span {
+    padding-left: 0rem;
+  }
+  .contenido-portafolio {
+    position: relative;
+    padding-left: 0rem !important;
+  }
+  .contenido-portafolio p {
+    text-align: center;
+    width: 100%;
+  }
+  #servicios-col {
+    padding-bottom: 7rem;
+  }
+  .imagen-logo- {
+    margin-top: 31rem;
+    width: 100%;
+    position: relative;
+  }
+  .imagen-logo-- {
+    width: 100%;
+    margin-top: 31rem;
+    position: relative;
+  }
+  .imagen-logo-- img {
+    width: 25rem;
+  }
+  section:nth-child(4) {
+    padding-bottom: 0rem;
+  }
+  .c-lerp-block:last-child {
+    font-size: 2rem;
+  }
+  .splide__slide img {
+    width: 6rem;
+  }
+  #splide_trackk {
+    height: 51.5rem;
+  }
+  .video-telefono {
+    display: none;
+  }
+  .servicios {
+    padding-top: 1rem;
+  }
+  .ayudarte span {
+    font-size: 2rem;
+  }
+  .contenido-ayudarte {
+    text-align: center;
+  }
+  .contenido-ayudarte p {
+    font-size: 1rem;
+  }
+  form {
+    margin-left: 0rem;
+  }
+  .navbar-brand img {
+    margin-left: 1rem;
+  }
+  #my-sections {
+    height: auto;
+  }
+  .logoCliente-grande {
+    width: 6.4rem !important;
+  }
+  .margin-clientes {
+    margin-top: 0rem;
+  }
+  .logoCliente-intercargo {
+    width: 6.4rem !important;
+    margin-top: 0rem;
+  }
+  .boton-portafolio {
+    left: 0rem;
+    margin: auto;
+  }
+  #nuevo-botonteam {
+    margin-top: 0rem;
+  }
+  .muñecos-team {
+    margin-bottom: -1rem;
+  }
+  .imagen-3 {
+    top: 24rem;
+  }
+  .boton-portafolio {
+    left: 40%;
+    top: 40%;
+  }
+  #boton-team-- {
+    top: 76%;
+    left: 40%;
+  }
+  section:nth-child(3) {
+    height: 95rem;
+  }
+  .team-videosection video {
+    height: 49vh;
+    width: 100%;
+  }
+  .footer-info- {
+    display: none !important;
+  }
+  .footer-definitivo {
+    display: none;
+  }
+
+  .videos-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }

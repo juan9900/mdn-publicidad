@@ -2070,6 +2070,269 @@ i.fa-solid.fa-music {
 .boton-music i {
   color: #fff;
 }
+
+/* PRESENTATION PAGE */
+#navbarr-presentacion {
+  position: static;
+  z-index: 99;
+  width: 100vw;
+  background: #ffb700;
+  left: 0rem;
+}
+
+.title-presentation,
+.subtitle-presentation {
+  font-family: "Galderglynn TitlingRg Bold";
+  text-align: center;
+}
+.title-presentation {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 3.5em;
+}
+
+.subtitle-presentation {
+  margin-top: 4rem;
+}
+
+body.body-presentation {
+  overflow: auto;
+}
+
+.videos-grid {
+  margin: 2rem auto 0 auto;
+  width: 80%;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 3rem;
+  grid-row-gap: 3rem;
+}
+
+.miniature {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+  position: relative;
+}
+
+.videos-grid div {
+  overflow: clip;
+  border-radius: 10px;
+}
+
+.videos-grid div:hover .miniature {
+  transform: scale(1.2);
+}
+
+.miniature-img-container {
+  cursor: pointer;
+}
+.videos-grid .miniature-img-container:after {
+  content: "\A";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 1;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+
+.videos-grid div:hover::after {
+  opacity: 0;
+}
+
+.videos-grid div:hover .play-button {
+  opacity: 0;
+}
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 70%;
+  transform: translate(-50%, -50%);
+  background-clip: text;
+  z-index: 2;
+  transition: opacity 0.5s;
+}
+
+.div1 {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.div2 {
+  grid-area: 1 / 2 / 2 / 3;
+}
+.div3 {
+  grid-area: 1 / 3 / 2 / 4;
+}
+.div4 {
+  grid-area: 1 / 4 / 2 / 5;
+}
+.div5 {
+  grid-area: 2 / 1 / 3 / 2;
+}
+.div6 {
+  grid-area: 2 / 2 / 3 / 3;
+}
+.div7 {
+  grid-area: 2 / 3 / 3 / 4;
+}
+.div8 {
+  grid-area: 2 / 4 / 3 / 5;
+}
+
+.video-title {
+  font-family: "Pluto Sans Light";
+  margin-top: 0.5rem;
+}
+.modal-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background: #00000090;
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.modal-video-visible {
+  opacity: 1;
+}
+
+.modal-video video {
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.brands-grid {
+  margin: 2rem auto 3rem auto;
+  width: 70%;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 3rem;
+  grid-row-gap: 3rem;
+}
+
+.brand-container {
+  width: 100%;
+  text-align: center;
+  background: #faf9f7;
+  border-radius: 15px;
+  cursor: pointer;
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.brand-container img {
+  flex-grow: 1;
+}
+
+.brands-grid img {
+  width: 50%;
+}
+
+.brand1 {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.brand2 {
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+.brand3 {
+  grid-area: 1 / 3 / 2 / 4;
+}
+
+.brand4 {
+  grid-area: 2 / 1 / 3 / 2;
+}
+
+.brand5 {
+  grid-area: 2 / 2 / 3 / 2;
+}
+
+.brand6 {
+  grid-area: 2 / 3 / 3 / 4;
+}
+
+.carousel-item img {
+  width: 100%;
+}
+
+.active {
+  border-bottom: none;
+}
+
+.indicator {
+  border-radius: 0;
+}
+
+#modalBrand .modal-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 90vh;
+}
+
+#modalBrand .modal-dialog {
+  max-width: 52%;
+}
+
+#carousel-more-brand {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding-top: 1rem;
+  flex-grow: 1;
+}
+
+#modalBrand .carousel-indicators {
+  position: inherit;
+}
+
+#carousel-more-brand .carousel-control-prev,
+#carousel-more-brand .carousel-control-next {
+  position: inherit;
+}
+
+#carousel-more-brand .carousel-inner {
+  display: flex;
+  align-items: center;
+}
+.carousel-indicators [data-bs-target] {
+  background-color: rgb(251, 200, 31);
+}
+
+.carousel-control-next-icon {
+  background: url("/img/arrowNext.svg");
+}
+
+.carousel-control-prev-icon {
+  background: url("/img/arrowPrev.svg");
+}
+
+.carousel-more-brand {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
 @media screen and (min-width: 240px) and (max-width: 360px) {
   h1.texto.scroll-class {
     font-size: 2.5rem;
@@ -2140,7 +2403,7 @@ i.fa-solid.fa-music {
     left: 17%;
   }
   .imagen-logo-- img {
-    padding-top: 4.7rem;
+    /* padding-top: 4.7rem; */
   }
   .ayudarte {
     padding-top: 9rem;
@@ -2464,4 +2727,50 @@ height: 60rem;
   html.has-scroll-smooth {
     overflow: auto;
   } */
+  #navbarr-presentacion {
+    padding-bottom: 0;
+  }
+  .title-presentation {
+    font-size: 2.8em;
+  }
+
+  .videos-grid {
+    grid-template-columns: repeat(auto-fit, minmax(100%, 2fr));
+
+    grid-row-gap: 1rem;
+  }
+
+  .videos-grid div {
+    width: 100%;
+    grid-area: auto / auto / auto / auto;
+  }
+
+  .brands-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+
+    grid-row-gap: 1rem;
+  }
+
+  .brands-grid div {
+    grid-area: auto / auto / auto / auto;
+  }
+
+  .modal-video video {
+    width: 90%;
+  }
+
+  #modalBrand .modal-dialog {
+    max-width: 95%;
+    margin: 0 auto;
+  }
+
+  #carousel-more-brand .carousel-control-prev,
+  #carousel-more-brand .carousel-control-next {
+    margin-top: 0;
+    position: absolute;
+  }
+
+  #modalBrand .modal-content {
+    height: 55vh;
+  }
 }

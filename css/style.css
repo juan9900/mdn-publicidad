@@ -1765,6 +1765,7 @@ body.body-presentation {
 
 #modalBrand .carousel-indicators {
   position: inherit;
+  margin-bottom: 0;
 }
 
 #carousel-more-brand .carousel-control-prev,

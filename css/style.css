@@ -1954,7 +1954,8 @@ body.body-presentation {
   justify-content: flex-start;
 }
 
-@media screen and (min-width: 500px) {}
+@media screen and (min-width: 500px) {
+}
 
 @media screen and (min-width: 240px) and (max-width: 360px) {
   h1.texto.scroll-class {
@@ -2483,7 +2484,7 @@ height: 60rem;
 .ebook-body {
   padding-top: 3rem;
   padding-left: 10rem;
-  background-image: url('/img/Grupo-2-arreglada.png');
+  background-image: url("/img/Grupo-2-arreglada.png");
   background-position: 90% 100%;
   background-size: contain;
   min-height: 100vh;
@@ -2499,9 +2500,9 @@ height: 60rem;
 .ebook-input {
   background-color: #ebebeb;
   border: 0;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   width: 70%;
-  padding: .2rem;
+  padding: 0.2rem;
 }
 
 #message-error {
@@ -2942,7 +2943,6 @@ height: 60rem;
     padding-top: 1rem;
     padding-left: 0;
     background-position: 0 105%;
-
   }
 
   .ebook-input {
@@ -2950,13 +2950,16 @@ height: 60rem;
   }
 
   .ebook-title {
-    font-size: 2.1rem;
+    font-size: 2rem;
+  }
+
+  .ebook-text {
+    font-size: 1.1em;
   }
 
   #message-error {
     width: 100%;
   }
-
 }
 
 @media screen and (min-width: 701px) and (max-width: 1024px) {
@@ -3227,7 +3230,6 @@ height: 60rem;
     padding-top: 1rem;
     background-position: 0 220%;
   }
-
 }
 
 .btn-ebook {
@@ -3237,12 +3239,11 @@ height: 60rem;
   z-index: 1;
   padding: 0.3rem 1rem;
   background-color: #ffb600;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   font-family: "swiss-721-medium-bt";
   text-decoration: none;
   text-transform: uppercase;
 }
-
 
 .ebook-title span {
   font-weight: 600;
@@ -3251,7 +3252,6 @@ height: 60rem;
 .ebook-text span {
   color: #ffb700;
 }
-
 
 #form-ebook {
   margin-left: 0;
